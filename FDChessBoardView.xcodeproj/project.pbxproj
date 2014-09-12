@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D96101D519C384FF00A4AEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D419C384FF00A4AEDB /* main.m */; };
+		D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D719C384FF00A4AEDB /* AppDelegate.m */; };
+		D96101DB19C384FF00A4AEDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101DA19C384FF00A4AEDB /* ViewController.m */; };
+		D96101DE19C384FF00A4AEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96101DC19C384FF00A4AEDB /* Main.storyboard */; };
+		D96101E019C384FF00A4AEDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96101DF19C384FF00A4AEDB /* Images.xcassets */; };
+		D96101E319C384FF00A4AEDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96101E119C384FF00A4AEDB /* LaunchScreen.xib */; };
+		D96101EF19C384FF00A4AEDB /* FDChessBoardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101EE19C384FF00A4AEDB /* FDChessBoardViewTests.m */; };
+		D96101FE19C3862B00A4AEDB /* FDChessboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101FD19C3862B00A4AEDB /* FDChessboardView.m */; };
+		D96101FF19C3862B00A4AEDB /* FDChessboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101FD19C3862B00A4AEDB /* FDChessboardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D96101E919C384FF00A4AEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D96101C719C384FF00A4AEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D96101CE19C384FF00A4AEDB;
+			remoteInfo = FDChessBoardView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D96101CF19C384FF00A4AEDB /* FDChessBoardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDChessBoardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96101D319C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96101D419C384FF00A4AEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D96101D619C384FF00A4AEDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D96101D719C384FF00A4AEDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D96101D919C384FF00A4AEDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D96101DA19C384FF00A4AEDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D96101DD19C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D96101DF19C384FF00A4AEDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D96101E219C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D96101E819C384FF00A4AEDB /* FDChessBoardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDChessBoardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96101ED19C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96101EE19C384FF00A4AEDB /* FDChessBoardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDChessBoardViewTests.m; sourceTree = "<group>"; };
+		D96101FC19C3862B00A4AEDB /* FDChessboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDChessboardView.h; path = FDChessBoardView/FDChessboardView.h; sourceTree = "<group>"; };
+		D96101FD19C3862B00A4AEDB /* FDChessboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FDChessboardView.m; path = FDChessBoardView/FDChessboardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D96101CC19C384FF00A4AEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96101E519C384FF00A4AEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D96101C619C384FF00A4AEDB = {
+			isa = PBXGroup;
+			children = (
+				D96101FC19C3862B00A4AEDB /* FDChessboardView.h */,
+				D96101FD19C3862B00A4AEDB /* FDChessboardView.m */,
+				D96101D119C384FF00A4AEDB /* FDChessBoardViewExample */,
+				D96101EB19C384FF00A4AEDB /* FDChessBoardViewTests */,
+				D96101D019C384FF00A4AEDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D96101D019C384FF00A4AEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96101CF19C384FF00A4AEDB /* FDChessBoardView.app */,
+				D96101E819C384FF00A4AEDB /* FDChessBoardViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96101D119C384FF00A4AEDB /* FDChessBoardViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				D96101D619C384FF00A4AEDB /* AppDelegate.h */,
+				D96101D719C384FF00A4AEDB /* AppDelegate.m */,
+				D96101D919C384FF00A4AEDB /* ViewController.h */,
+				D96101DA19C384FF00A4AEDB /* ViewController.m */,
+				D96101DC19C384FF00A4AEDB /* Main.storyboard */,
+				D96101DF19C384FF00A4AEDB /* Images.xcassets */,
+				D96101E119C384FF00A4AEDB /* LaunchScreen.xib */,
+				D96101D219C384FF00A4AEDB /* Supporting Files */,
+			);
+			name = FDChessBoardViewExample;
+			path = FDChessBoardView;
+			sourceTree = "<group>";
+		};
+		D96101D219C384FF00A4AEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D96101D319C384FF00A4AEDB /* Info.plist */,
+				D96101D419C384FF00A4AEDB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D96101EB19C384FF00A4AEDB /* FDChessBoardViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D96101EE19C384FF00A4AEDB /* FDChessBoardViewTests.m */,
+				D96101EC19C384FF00A4AEDB /* Supporting Files */,
+			);
+			path = FDChessBoardViewTests;
+			sourceTree = "<group>";
+		};
+		D96101EC19C384FF00A4AEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D96101ED19C384FF00A4AEDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D96101CE19C384FF00A4AEDB /* FDChessBoardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96101F219C384FF00A4AEDB /* Build configuration list for PBXNativeTarget "FDChessBoardView" */;
+			buildPhases = (
+				D96101CB19C384FF00A4AEDB /* Sources */,
+				D96101CC19C384FF00A4AEDB /* Frameworks */,
+				D96101CD19C384FF00A4AEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDChessBoardView;
+			productName = FDChessBoardView;
+			productReference = D96101CF19C384FF00A4AEDB /* FDChessBoardView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D96101E719C384FF00A4AEDB /* FDChessBoardViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96101F519C384FF00A4AEDB /* Build configuration list for PBXNativeTarget "FDChessBoardViewTests" */;
+			buildPhases = (
+				D96101E419C384FF00A4AEDB /* Sources */,
+				D96101E519C384FF00A4AEDB /* Frameworks */,
+				D96101E619C384FF00A4AEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D96101EA19C384FF00A4AEDB /* PBXTargetDependency */,
+			);
+			name = FDChessBoardViewTests;
+			productName = FDChessBoardViewTests;
+			productReference = D96101E819C384FF00A4AEDB /* FDChessBoardViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D96101C719C384FF00A4AEDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "William Entriken";
+				TargetAttributes = {
+					D96101CE19C384FF00A4AEDB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D96101E719C384FF00A4AEDB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D96101CE19C384FF00A4AEDB;
+					};
+				};
+			};
+			buildConfigurationList = D96101CA19C384FF00A4AEDB /* Build configuration list for PBXProject "FDChessBoardView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D96101C619C384FF00A4AEDB;
+			productRefGroup = D96101D019C384FF00A4AEDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D96101CE19C384FF00A4AEDB /* FDChessBoardView */,
+				D96101E719C384FF00A4AEDB /* FDChessBoardViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D96101CD19C384FF00A4AEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96101DE19C384FF00A4AEDB /* Main.storyboard in Resources */,
+				D96101E319C384FF00A4AEDB /* LaunchScreen.xib in Resources */,
+				D96101E019C384FF00A4AEDB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96101E619C384FF00A4AEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96101CB19C384FF00A4AEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96101FE19C3862B00A4AEDB /* FDChessboardView.m in Sources */,
+				D96101DB19C384FF00A4AEDB /* ViewController.m in Sources */,
+				D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */,
+				D96101D519C384FF00A4AEDB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96101E419C384FF00A4AEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96101FF19C3862B00A4AEDB /* FDChessboardView.m in Sources */,
+				D96101EF19C384FF00A4AEDB /* FDChessBoardViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D96101EA19C384FF00A4AEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D96101CE19C384FF00A4AEDB /* FDChessBoardView */;
+			targetProxy = D96101E919C384FF00A4AEDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D96101DC19C384FF00A4AEDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96101DD19C384FF00A4AEDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D96101E119C384FF00A4AEDB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D96101E219C384FF00A4AEDB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D96101F019C384FF00A4AEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D96101F119C384FF00A4AEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D96101F319C384FF00A4AEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FDChessBoardView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D96101F419C384FF00A4AEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FDChessBoardView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D96101F619C384FF00A4AEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FDChessBoardViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDChessBoardView.app/FDChessBoardView";
+			};
+			name = Debug;
+		};
+		D96101F719C384FF00A4AEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FDChessBoardViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDChessBoardView.app/FDChessBoardView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D96101CA19C384FF00A4AEDB /* Build configuration list for PBXProject "FDChessBoardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96101F019C384FF00A4AEDB /* Debug */,
+				D96101F119C384FF00A4AEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96101F219C384FF00A4AEDB /* Build configuration list for PBXNativeTarget "FDChessBoardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96101F319C384FF00A4AEDB /* Debug */,
+				D96101F419C384FF00A4AEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96101F519C384FF00A4AEDB /* Build configuration list for PBXNativeTarget "FDChessBoardViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96101F619C384FF00A4AEDB /* Debug */,
+				D96101F719C384FF00A4AEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D96101C719C384FF00A4AEDB /* Project object */;
+}
