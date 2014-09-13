@@ -18,4 +18,30 @@
 }
 */
 
+- (void)reloadData
+{
+    
+}
+
+- (BOOL)movePieceAtCoordinate:(CGPoint)from toCoordinate:(CGPoint)to
+{
+    return YES;
+}
+
+- (BOOL)movePieceAtCoordinate:(CGPoint)from toCoordinate:(CGPoint)to andPromoteAs:(FDChessboardPiece)as
+{
+    return YES;
+}
+
+- (BOOL)premovePieceAtCoordinate:(CGPoint)from toCoordinate:(CGPoint)to
+{
+    return YES;
+}
+
+- (BOOL)premovePieceAtCoordinate:(CGPoint)from toCoordinate:(CGPoint)to andPromoteAs:(FDChessboardPiece)as
+{
+    return YES;
+}
+
+
 @end
