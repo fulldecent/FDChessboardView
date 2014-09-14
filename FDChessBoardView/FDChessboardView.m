@@ -7,6 +7,7 @@
 //
 
 #import "FDChessBoardView.h"
+#import <UIImage+SVG/UIImage+SVG.h>
 
 @interface FDChessboardView()
 // These arrays use index i=0..63 from white queen rook to king rook, then ranks up to black pieces
@@ -69,7 +70,8 @@
 
 - (void)setup
 {
-    [self resetConstaintsAndSetTiles];
+    [self resetConstraintsAndSetTiles];
+    [self insertPiece];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -112,7 +114,7 @@
 
 #pragma mark - Drawing helpers
 
-- (void)resetConstaintsAndSetTiles
+- (void)resetConstraintsAndSetTiles
 {
     self.translatesAutoresizingMaskIntoConstraints = NO;
     self.constraints = [NSMutableArray array];
@@ -213,6 +215,15 @@
     [self layoutIfNeeded];
 }
 
+- (void)insertPiece
+{
+    UIImage* image = [UIImage imageWithSVGNamed:@"bk"
+                                     targetSize:CGSizeMake(200, 200)
+                                      fillColor:[UIColor blueColor]];
+    UIImageView *iv = [[UIImageView alloc] initWithImage:image];
+    [self addSubview:iv];
+    [self layoutIfNeeded];
+}
 
 
 #pragma mark - Other
