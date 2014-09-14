@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FDChessboardView.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet FDChessboardView *chessboard;
 
 
 @end

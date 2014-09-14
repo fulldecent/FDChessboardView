@@ -35,6 +35,7 @@ typedef enum FDChessboardStatus {
 @protocol FDChessboardViewDataSource <NSObject>
 /// CGPoint is x = 0..7 for rank and y = 0..7 for file
 - (FDChessboardPiece)chessboardView:(FDChessboardView *)board pieceForCoordinate:(CGPoint)coordinate;
+@optional
 - (BOOL)chessboardViewHasLastMove:(FDChessboardView *)board;
 - (CGRect)chessboardViewLastMoveOrigin:(FDChessboardView *)board;
 - (CGRect)chessboardViewLastMoveDestination:(FDChessboardView *)board;
@@ -61,6 +62,8 @@ typedef enum FDChessboardStatus {
 @property (strong, nonatomic) UIColor *lastMoveColor;
 @property (strong, nonatomic) UIColor *premoveColor;
 @property (strong, nonatomic) NSString *pieceGraphicsDirectoryPath;
+@property (strong, nonatomic) id<FDChessboardViewDataSource> dataSource;
+@property (strong, nonatomic) id<FDChessboardViewDelegate> delegate;
 @property FDChessboardStatus status;
 @property BOOL doesAnimate;
 @property BOOL doesShowLegalSquares;

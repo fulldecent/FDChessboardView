@@ -58,6 +58,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="chessboard" destination="E5e-uH-iw1" id="pZb-QV-hRE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
