@@ -33,6 +33,7 @@ typedef enum FDChessboardStatus {
 @class FDChessboardView;
 
 @protocol FDChessboardViewDataSource <NSObject>
+/// CGPoint is x = 0..7 for rank and y = 0..7 for file
 - (FDChessboardPiece)chessboardView:(FDChessboardView *)board pieceForCoordinate:(CGPoint)coordinate;
 - (BOOL)chessboardViewHasLastMove:(FDChessboardView *)board;
 - (CGRect)chessboardViewLastMoveOrigin:(FDChessboardView *)board;
