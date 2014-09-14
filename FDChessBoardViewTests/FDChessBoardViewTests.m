@@ -1,6 +1,6 @@
 //
-//  FDChessBoardViewTests.m
-//  FDChessBoardViewTests
+//  FDChessboardViewTests.m
+//  FDChessboardViewTests
 //
 //  Created by William Entriken on 9/12/14.
 //  Copyright (c) 2014 William Entriken. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface FDChessBoardViewTests : XCTestCase
+@interface FDChessboardViewTests : XCTestCase
 
 @end
 
-@implementation FDChessBoardViewTests
+@implementation FDChessboardViewTests
 
 - (void)setUp {
     [super setUp];

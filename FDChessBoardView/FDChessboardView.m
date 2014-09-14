@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 William Entriken. All rights reserved.
 //
 
-#import "FDChessBoardView.h"
+#import "FDChessboardView.h"
 #import <UIImage+SVG/UIImage+SVG.h>
 
 @interface FDChessboardView()
@@ -17,6 +17,8 @@
 @property (strong, nonatomic) NSMutableArray *constraints;
 @property (strong, nonatomic) UIView *lastMoveArrow;
 @property (strong, nonatomic) UIView *premoveArrow;
+@property (strong, nonatomic) UIColor *lightPieceColor; // temporary until SVG is fixed
+@property (strong, nonatomic) UIColor *darkPieceColor; // temporary until SVG is fixed
 @end
 
 @implementation FDChessboardView

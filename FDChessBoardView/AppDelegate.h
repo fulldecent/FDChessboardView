@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  FDChessBoardView
+//  FDChessboardView
 //
 //  Created by William Entriken on 9/12/14.
 //  Copyright (c) 2014 William Entriken. All rights reserved.

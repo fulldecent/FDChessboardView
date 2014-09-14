@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FDChessBoardView.xcodeproj">
+      location = "self:FDChessboardView.xcodeproj">
    </FileRef>
 </Workspace>
