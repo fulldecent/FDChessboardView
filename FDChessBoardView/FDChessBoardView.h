@@ -62,8 +62,8 @@ typedef enum FDChessboardStatus {
 @property (strong, nonatomic) UIColor *lastMoveColor;
 @property (strong, nonatomic) UIColor *premoveColor;
 @property (strong, nonatomic) NSString *pieceGraphicsDirectoryPath;
-@property (strong, nonatomic) id<FDChessboardViewDataSource> dataSource;
-@property (strong, nonatomic) id<FDChessboardViewDelegate> delegate;
+@property (weak, nonatomic) id<FDChessboardViewDataSource> dataSource;
+@property (weak, nonatomic) id<FDChessboardViewDelegate> delegate;
 @property FDChessboardStatus status;
 @property BOOL doesAnimate;
 @property BOOL doesShowLegalSquares;
