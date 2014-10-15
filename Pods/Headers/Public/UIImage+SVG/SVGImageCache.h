@@ -1,0 +1,1 @@
+../../../UIImage+SVG/Classes/SVGImageCache.h
