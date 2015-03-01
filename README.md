@@ -41,3 +41,8 @@ These following items are in the API for discussion and awaiting implementation:
  * Animation for piece moves
  * Highlighting of legal squares for a piece after begin dragging
  * Premove
+
+See Also
+===========
+
+See also Kibitz for Mac which is making a comeback https://github.com/fulldecent/kibitz
