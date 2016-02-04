@@ -7,39 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93B51CB1C61AB6E00ADF617 /* FDChessboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B51CA1C61AB6E00ADF617 /* FDChessboardView.swift */; };
 		D96101D519C384FF00A4AEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D419C384FF00A4AEDB /* main.m */; };
 		D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D719C384FF00A4AEDB /* AppDelegate.m */; };
-		D96101DB19C384FF00A4AEDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101DA19C384FF00A4AEDB /* ViewController.m */; };
 		D96101DE19C384FF00A4AEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96101DC19C384FF00A4AEDB /* Main.storyboard */; };
 		D96101E019C384FF00A4AEDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96101DF19C384FF00A4AEDB /* Images.xcassets */; };
 		D96101E319C384FF00A4AEDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96101E119C384FF00A4AEDB /* LaunchScreen.xib */; };
 		D96101EF19C384FF00A4AEDB /* FDChessboardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101EE19C384FF00A4AEDB /* FDChessboardViewTests.m */; };
-		D96101FE19C3862B00A4AEDB /* FDChessboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101FD19C3862B00A4AEDB /* FDChessboardView.m */; };
-		D96101FF19C3862B00A4AEDB /* FDChessboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101FD19C3862B00A4AEDB /* FDChessboardView.m */; };
-		D9B0DE0819C557E700BA740F /* wp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFC19C557E700BA740F /* wp.svg */; };
-		D9B0DE0919C557E700BA740F /* wp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFC19C557E700BA740F /* wp.svg */; };
-		D9B0DE0A19C557E700BA740F /* bk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFD19C557E700BA740F /* bk.svg */; };
-		D9B0DE0B19C557E700BA740F /* bk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFD19C557E700BA740F /* bk.svg */; };
-		D9B0DE0C19C557E700BA740F /* bp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFE19C557E700BA740F /* bp.svg */; };
-		D9B0DE0D19C557E700BA740F /* bp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFE19C557E700BA740F /* bp.svg */; };
-		D9B0DE0E19C557E700BA740F /* wq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFF19C557E700BA740F /* wq.svg */; };
-		D9B0DE0F19C557E700BA740F /* wq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DDFF19C557E700BA740F /* wq.svg */; };
-		D9B0DE1019C557E700BA740F /* wk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0019C557E700BA740F /* wk.svg */; };
-		D9B0DE1119C557E700BA740F /* wk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0019C557E700BA740F /* wk.svg */; };
-		D9B0DE1219C557E700BA740F /* wn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0119C557E700BA740F /* wn.svg */; };
-		D9B0DE1319C557E700BA740F /* wn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0119C557E700BA740F /* wn.svg */; };
-		D9B0DE1419C557E700BA740F /* bq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0219C557E700BA740F /* bq.svg */; };
-		D9B0DE1519C557E700BA740F /* bq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0219C557E700BA740F /* bq.svg */; };
-		D9B0DE1619C557E700BA740F /* bb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0319C557E700BA740F /* bb.svg */; };
-		D9B0DE1719C557E700BA740F /* bb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0319C557E700BA740F /* bb.svg */; };
-		D9B0DE1819C557E700BA740F /* bn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0419C557E700BA740F /* bn.svg */; };
-		D9B0DE1919C557E700BA740F /* bn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0419C557E700BA740F /* bn.svg */; };
-		D9B0DE1A19C557E700BA740F /* wr.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0519C557E700BA740F /* wr.svg */; };
-		D9B0DE1B19C557E700BA740F /* wr.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0519C557E700BA740F /* wr.svg */; };
-		D9B0DE1C19C557E700BA740F /* br.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0619C557E700BA740F /* br.svg */; };
-		D9B0DE1D19C557E700BA740F /* br.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0619C557E700BA740F /* br.svg */; };
-		D9B0DE1E19C557E700BA740F /* wb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0719C557E700BA740F /* wb.svg */; };
-		D9B0DE1F19C557E700BA740F /* wb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9B0DE0719C557E700BA740F /* wb.svg */; };
+		D9FA89BA1C62BF4100F88B18 /* bb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89AE1C62BF4100F88B18 /* bb.svg */; };
+		D9FA89BB1C62BF4100F88B18 /* bk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89AF1C62BF4100F88B18 /* bk.svg */; };
+		D9FA89BC1C62BF4100F88B18 /* bn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B01C62BF4100F88B18 /* bn.svg */; };
+		D9FA89BD1C62BF4100F88B18 /* bp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B11C62BF4100F88B18 /* bp.svg */; };
+		D9FA89BE1C62BF4100F88B18 /* bq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B21C62BF4100F88B18 /* bq.svg */; };
+		D9FA89BF1C62BF4100F88B18 /* br.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B31C62BF4100F88B18 /* br.svg */; };
+		D9FA89C01C62BF4100F88B18 /* wb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B41C62BF4100F88B18 /* wb.svg */; };
+		D9FA89C11C62BF4100F88B18 /* wk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B51C62BF4100F88B18 /* wk.svg */; };
+		D9FA89C21C62BF4100F88B18 /* wn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B61C62BF4100F88B18 /* wn.svg */; };
+		D9FA89C31C62BF4100F88B18 /* wp.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B71C62BF4100F88B18 /* wp.svg */; };
+		D9FA89C41C62BF4100F88B18 /* wq.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B81C62BF4100F88B18 /* wq.svg */; };
+		D9FA89C51C62BF4100F88B18 /* wr.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B91C62BF4100F88B18 /* wr.svg */; };
+		D9FA89C71C62C6AA00F88B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FA89C61C62C6AA00F88B18 /* ViewController.swift */; };
 		E23B08155CA94F0399C85C93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C5F3BB767543FC9633BE8F /* libPods.a */; };
 		EDA218CA83474E58B5588546 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C5F3BB767543FC9633BE8F /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -55,35 +42,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1EDBFEE7818DD1834BC833C6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		83D9EDE7B88147B79C7C46CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		85C5F3BB767543FC9633BE8F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93B51C91C61AB6E00ADF617 /* FDChessboardView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FDChessboardView-Bridging-Header.h"; sourceTree = "<group>"; };
+		D93B51CA1C61AB6E00ADF617 /* FDChessboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDChessboardView.swift; sourceTree = "<group>"; };
 		D96101CF19C384FF00A4AEDB /* FDChessboardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDChessboardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96101D319C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96101D419C384FF00A4AEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D96101D619C384FF00A4AEDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D96101D719C384FF00A4AEDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D96101D919C384FF00A4AEDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D96101DA19C384FF00A4AEDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D96101DD19C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D96101DF19C384FF00A4AEDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D96101E219C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D96101E819C384FF00A4AEDB /* FDChessboardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDChessboardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96101ED19C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96101EE19C384FF00A4AEDB /* FDChessboardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDChessboardViewTests.m; sourceTree = "<group>"; };
-		D96101FC19C3862B00A4AEDB /* FDChessboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDChessboardView.h; path = FDChessboardView/FDChessboardView.h; sourceTree = "<group>"; };
-		D96101FD19C3862B00A4AEDB /* FDChessboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FDChessboardView.m; path = FDChessboardView/FDChessboardView.m; sourceTree = "<group>"; };
-		D9B0DDFC19C557E700BA740F /* wp.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wp.svg; sourceTree = "<group>"; };
-		D9B0DDFD19C557E700BA740F /* bk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bk.svg; sourceTree = "<group>"; };
-		D9B0DDFE19C557E700BA740F /* bp.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bp.svg; sourceTree = "<group>"; };
-		D9B0DDFF19C557E700BA740F /* wq.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wq.svg; sourceTree = "<group>"; };
-		D9B0DE0019C557E700BA740F /* wk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wk.svg; sourceTree = "<group>"; };
-		D9B0DE0119C557E700BA740F /* wn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wn.svg; sourceTree = "<group>"; };
-		D9B0DE0219C557E700BA740F /* bq.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bq.svg; sourceTree = "<group>"; };
-		D9B0DE0319C557E700BA740F /* bb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bb.svg; sourceTree = "<group>"; };
-		D9B0DE0419C557E700BA740F /* bn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bn.svg; sourceTree = "<group>"; };
-		D9B0DE0519C557E700BA740F /* wr.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wr.svg; sourceTree = "<group>"; };
-		D9B0DE0619C557E700BA740F /* br.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = br.svg; sourceTree = "<group>"; };
-		D9B0DE0719C557E700BA740F /* wb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wb.svg; sourceTree = "<group>"; };
+		D9FA89AE1C62BF4100F88B18 /* bb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bb.svg; sourceTree = "<group>"; };
+		D9FA89AF1C62BF4100F88B18 /* bk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bk.svg; sourceTree = "<group>"; };
+		D9FA89B01C62BF4100F88B18 /* bn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bn.svg; sourceTree = "<group>"; };
+		D9FA89B11C62BF4100F88B18 /* bp.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bp.svg; sourceTree = "<group>"; };
+		D9FA89B21C62BF4100F88B18 /* bq.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bq.svg; sourceTree = "<group>"; };
+		D9FA89B31C62BF4100F88B18 /* br.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = br.svg; sourceTree = "<group>"; };
+		D9FA89B41C62BF4100F88B18 /* wb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wb.svg; sourceTree = "<group>"; };
+		D9FA89B51C62BF4100F88B18 /* wk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wk.svg; sourceTree = "<group>"; };
+		D9FA89B61C62BF4100F88B18 /* wn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wn.svg; sourceTree = "<group>"; };
+		D9FA89B71C62BF4100F88B18 /* wp.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wp.svg; sourceTree = "<group>"; };
+		D9FA89B81C62BF4100F88B18 /* wq.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wq.svg; sourceTree = "<group>"; };
+		D9FA89B91C62BF4100F88B18 /* wr.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wr.svg; sourceTree = "<group>"; };
+		D9FA89C61C62C6AA00F88B18 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = FDChessBoardView/ViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +101,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9167F6EE79454BA5E04FCDEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83D9EDE7B88147B79C7C46CF /* Pods.debug.xcconfig */,
+				1EDBFEE7818DD1834BC833C6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D96101C619C384FF00A4AEDB = {
 			isa = PBXGroup;
 			children = (
-				D96101FC19C3862B00A4AEDB /* FDChessboardView.h */,
-				D96101FD19C3862B00A4AEDB /* FDChessboardView.m */,
+				D93B51CA1C61AB6E00ADF617 /* FDChessboardView.swift */,
 				D9B0DDFB19C5573900BA740F /* DefaultTheme */,
 				D96101D119C384FF00A4AEDB /* FDChessboardViewExample */,
 				D96101EB19C384FF00A4AEDB /* FDChessboardViewTests */,
 				D96101D019C384FF00A4AEDB /* Products */,
-				638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */,
 				0D48FEC06B9945AEAACDC406 /* Frameworks */,
+				9167F6EE79454BA5E04FCDEE /* Pods */,
+				D93B51C91C61AB6E00ADF617 /* FDChessboardView-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +138,7 @@
 			children = (
 				D96101D619C384FF00A4AEDB /* AppDelegate.h */,
 				D96101D719C384FF00A4AEDB /* AppDelegate.m */,
-				D96101D919C384FF00A4AEDB /* ViewController.h */,
-				D96101DA19C384FF00A4AEDB /* ViewController.m */,
+				D9FA89C61C62C6AA00F88B18 /* ViewController.swift */,
 				D96101DC19C384FF00A4AEDB /* Main.storyboard */,
 				D96101DF19C384FF00A4AEDB /* Images.xcassets */,
 				D96101E119C384FF00A4AEDB /* LaunchScreen.xib */,
@@ -182,18 +177,18 @@
 		D9B0DDFB19C5573900BA740F /* DefaultTheme */ = {
 			isa = PBXGroup;
 			children = (
-				D9B0DDFC19C557E700BA740F /* wp.svg */,
-				D9B0DDFD19C557E700BA740F /* bk.svg */,
-				D9B0DDFE19C557E700BA740F /* bp.svg */,
-				D9B0DDFF19C557E700BA740F /* wq.svg */,
-				D9B0DE0019C557E700BA740F /* wk.svg */,
-				D9B0DE0119C557E700BA740F /* wn.svg */,
-				D9B0DE0219C557E700BA740F /* bq.svg */,
-				D9B0DE0319C557E700BA740F /* bb.svg */,
-				D9B0DE0419C557E700BA740F /* bn.svg */,
-				D9B0DE0519C557E700BA740F /* wr.svg */,
-				D9B0DE0619C557E700BA740F /* br.svg */,
-				D9B0DE0719C557E700BA740F /* wb.svg */,
+				D9FA89AE1C62BF4100F88B18 /* bb.svg */,
+				D9FA89AF1C62BF4100F88B18 /* bk.svg */,
+				D9FA89B01C62BF4100F88B18 /* bn.svg */,
+				D9FA89B11C62BF4100F88B18 /* bp.svg */,
+				D9FA89B21C62BF4100F88B18 /* bq.svg */,
+				D9FA89B31C62BF4100F88B18 /* br.svg */,
+				D9FA89B41C62BF4100F88B18 /* wb.svg */,
+				D9FA89B51C62BF4100F88B18 /* wk.svg */,
+				D9FA89B61C62BF4100F88B18 /* wn.svg */,
+				D9FA89B71C62BF4100F88B18 /* wp.svg */,
+				D9FA89B81C62BF4100F88B18 /* wq.svg */,
+				D9FA89B91C62BF4100F88B18 /* wr.svg */,
 			);
 			name = DefaultTheme;
 			sourceTree = "<group>";
@@ -210,6 +205,7 @@
 				D96101CC19C384FF00A4AEDB /* Frameworks */,
 				D96101CD19C384FF00A4AEDB /* Resources */,
 				B475B9122C71410BBD68E02C /* Copy Pods Resources */,
+				654E1A485EBE584698065459 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +225,7 @@
 				D96101E519C384FF00A4AEDB /* Frameworks */,
 				D96101E619C384FF00A4AEDB /* Resources */,
 				D840D05D2AB143BB8BBC3FAD /* Copy Pods Resources */,
+				A54C7D8B17BC1FC6D4E7738D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +243,8 @@
 		D96101C719C384FF00A4AEDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "William Entriken";
 				TargetAttributes = {
 					D96101CE19C384FF00A4AEDB = {
@@ -282,21 +280,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B0DE1E19C557E700BA740F /* wb.svg in Resources */,
-				D9B0DE1A19C557E700BA740F /* wr.svg in Resources */,
-				D9B0DE1819C557E700BA740F /* bn.svg in Resources */,
-				D9B0DE0A19C557E700BA740F /* bk.svg in Resources */,
-				D9B0DE0E19C557E700BA740F /* wq.svg in Resources */,
+				D9FA89C31C62BF4100F88B18 /* wp.svg in Resources */,
+				D9FA89BC1C62BF4100F88B18 /* bn.svg in Resources */,
+				D9FA89BB1C62BF4100F88B18 /* bk.svg in Resources */,
+				D9FA89BA1C62BF4100F88B18 /* bb.svg in Resources */,
 				D96101DE19C384FF00A4AEDB /* Main.storyboard in Resources */,
-				D9B0DE1219C557E700BA740F /* wn.svg in Resources */,
+				D9FA89C51C62BF4100F88B18 /* wr.svg in Resources */,
+				D9FA89BD1C62BF4100F88B18 /* bp.svg in Resources */,
+				D9FA89C01C62BF4100F88B18 /* wb.svg in Resources */,
+				D9FA89C11C62BF4100F88B18 /* wk.svg in Resources */,
+				D9FA89C41C62BF4100F88B18 /* wq.svg in Resources */,
+				D9FA89BF1C62BF4100F88B18 /* br.svg in Resources */,
 				D96101E319C384FF00A4AEDB /* LaunchScreen.xib in Resources */,
-				D9B0DE1419C557E700BA740F /* bq.svg in Resources */,
+				D9FA89C21C62BF4100F88B18 /* wn.svg in Resources */,
 				D96101E019C384FF00A4AEDB /* Images.xcassets in Resources */,
-				D9B0DE0C19C557E700BA740F /* bp.svg in Resources */,
-				D9B0DE1019C557E700BA740F /* wk.svg in Resources */,
-				D9B0DE0819C557E700BA740F /* wp.svg in Resources */,
-				D9B0DE1C19C557E700BA740F /* br.svg in Resources */,
-				D9B0DE1619C557E700BA740F /* bb.svg in Resources */,
+				D9FA89BE1C62BF4100F88B18 /* bq.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,24 +302,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B0DE1919C557E700BA740F /* bn.svg in Resources */,
-				D9B0DE1719C557E700BA740F /* bb.svg in Resources */,
-				D9B0DE1119C557E700BA740F /* wk.svg in Resources */,
-				D9B0DE1519C557E700BA740F /* bq.svg in Resources */,
-				D9B0DE0F19C557E700BA740F /* wq.svg in Resources */,
-				D9B0DE1B19C557E700BA740F /* wr.svg in Resources */,
-				D9B0DE1D19C557E700BA740F /* br.svg in Resources */,
-				D9B0DE0919C557E700BA740F /* wp.svg in Resources */,
-				D9B0DE1319C557E700BA740F /* wn.svg in Resources */,
-				D9B0DE1F19C557E700BA740F /* wb.svg in Resources */,
-				D9B0DE0D19C557E700BA740F /* bp.svg in Resources */,
-				D9B0DE0B19C557E700BA740F /* bk.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		654E1A485EBE584698065459 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77542A23FB6D4390B78F4337 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +338,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A54C7D8B17BC1FC6D4E7738D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B475B9122C71410BBD68E02C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,7 +365,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2C3F884F9284AC9A17FEEA2 /* Check Pods Manifest.lock */ = {
@@ -379,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,8 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96101FE19C3862B00A4AEDB /* FDChessboardView.m in Sources */,
-				D96101DB19C384FF00A4AEDB /* ViewController.m in Sources */,
+				D9FA89C71C62C6AA00F88B18 /* ViewController.swift in Sources */,
+				D93B51CB1C61AB6E00ADF617 /* FDChessboardView.swift in Sources */,
 				D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */,
 				D96101D519C384FF00A4AEDB /* main.m in Sources */,
 			);
@@ -400,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96101FF19C3862B00A4AEDB /* FDChessboardView.m in Sources */,
 				D96101EF19C384FF00A4AEDB /* FDChessboardViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +470,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -515,29 +531,36 @@
 		};
 		D96101F319C384FF00A4AEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */;
+			baseConfigurationReference = 83D9EDE7B88147B79C7C46CF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FDChessboardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FDChessboardView;
+				SWIFT_OBJC_BRIDGING_HEADER = "FDChessboardView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D96101F419C384FF00A4AEDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */;
+			baseConfigurationReference = 1EDBFEE7818DD1834BC833C6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FDChessboardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FDChessboardView;
+				SWIFT_OBJC_BRIDGING_HEADER = "FDChessboardView-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		D96101F619C384FF00A4AEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */;
+			baseConfigurationReference = 83D9EDE7B88147B79C7C46CF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,6 +573,7 @@
 				);
 				INFOPLIST_FILE = FDChessboardViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FDChessboardViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDChessboardView.app/FDChessboardView";
 			};
@@ -557,7 +581,7 @@
 		};
 		D96101F719C384FF00A4AEDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 638C9D0ABBF545BE9AD85CB9 /* Pods.xcconfig */;
+			baseConfigurationReference = 1EDBFEE7818DD1834BC833C6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -566,6 +590,7 @@
 				);
 				INFOPLIST_FILE = FDChessboardViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FDChessboardViewTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDChessboardView.app/FDChessboardView";
 			};
