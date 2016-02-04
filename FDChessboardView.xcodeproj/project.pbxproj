@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D93B51CB1C61AB6E00ADF617 /* FDChessboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B51CA1C61AB6E00ADF617 /* FDChessboardView.swift */; };
-		D96101D519C384FF00A4AEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D419C384FF00A4AEDB /* main.m */; };
-		D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101D719C384FF00A4AEDB /* AppDelegate.m */; };
 		D96101DE19C384FF00A4AEDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96101DC19C384FF00A4AEDB /* Main.storyboard */; };
 		D96101E019C384FF00A4AEDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96101DF19C384FF00A4AEDB /* Images.xcassets */; };
 		D96101E319C384FF00A4AEDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96101E119C384FF00A4AEDB /* LaunchScreen.xib */; };
 		D96101EF19C384FF00A4AEDB /* FDChessboardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D96101EE19C384FF00A4AEDB /* FDChessboardViewTests.m */; };
+		D97A12001C63E2DE00D0BA9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A11FF1C63E2DE00D0BA9F /* AppDelegate.swift */; };
 		D9FA89BA1C62BF4100F88B18 /* bb.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89AE1C62BF4100F88B18 /* bb.svg */; };
 		D9FA89BB1C62BF4100F88B18 /* bk.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89AF1C62BF4100F88B18 /* bk.svg */; };
 		D9FA89BC1C62BF4100F88B18 /* bn.svg in Resources */ = {isa = PBXBuildFile; fileRef = D9FA89B01C62BF4100F88B18 /* bn.svg */; };
@@ -49,15 +48,13 @@
 		D93B51CA1C61AB6E00ADF617 /* FDChessboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDChessboardView.swift; sourceTree = "<group>"; };
 		D96101CF19C384FF00A4AEDB /* FDChessboardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDChessboardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96101D319C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D96101D419C384FF00A4AEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D96101D619C384FF00A4AEDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D96101D719C384FF00A4AEDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D96101DD19C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D96101DF19C384FF00A4AEDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D96101E219C384FF00A4AEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D96101E819C384FF00A4AEDB /* FDChessboardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDChessboardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96101ED19C384FF00A4AEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96101EE19C384FF00A4AEDB /* FDChessboardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDChessboardViewTests.m; sourceTree = "<group>"; };
+		D97A11FF1C63E2DE00D0BA9F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9FA89AE1C62BF4100F88B18 /* bb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bb.svg; sourceTree = "<group>"; };
 		D9FA89AF1C62BF4100F88B18 /* bk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bk.svg; sourceTree = "<group>"; };
 		D9FA89B01C62BF4100F88B18 /* bn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bn.svg; sourceTree = "<group>"; };
@@ -136,25 +133,15 @@
 		D96101D119C384FF00A4AEDB /* FDChessboardViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				D96101D619C384FF00A4AEDB /* AppDelegate.h */,
-				D96101D719C384FF00A4AEDB /* AppDelegate.m */,
+				D97A11FF1C63E2DE00D0BA9F /* AppDelegate.swift */,
 				D9FA89C61C62C6AA00F88B18 /* ViewController.swift */,
 				D96101DC19C384FF00A4AEDB /* Main.storyboard */,
 				D96101DF19C384FF00A4AEDB /* Images.xcassets */,
 				D96101E119C384FF00A4AEDB /* LaunchScreen.xib */,
-				D96101D219C384FF00A4AEDB /* Supporting Files */,
+				D96101D319C384FF00A4AEDB /* Info.plist */,
 			);
 			name = FDChessboardViewExample;
 			path = FDChessboardView;
-			sourceTree = "<group>";
-		};
-		D96101D219C384FF00A4AEDB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D96101D319C384FF00A4AEDB /* Info.plist */,
-				D96101D419C384FF00A4AEDB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D96101EB19C384FF00A4AEDB /* FDChessboardViewTests */ = {
@@ -407,8 +394,7 @@
 			files = (
 				D9FA89C71C62C6AA00F88B18 /* ViewController.swift in Sources */,
 				D93B51CB1C61AB6E00ADF617 /* FDChessboardView.swift in Sources */,
-				D96101D819C384FF00A4AEDB /* AppDelegate.m in Sources */,
-				D96101D519C384FF00A4AEDB /* main.m in Sources */,
+				D97A12001C63E2DE00D0BA9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
