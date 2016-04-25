@@ -7,7 +7,7 @@ FDChessboardView
 [![Platform](https://img.shields.io/cocoapods/p/FDChessboardView.svg?style=flat)](http://cocoadocs.org/docsets/FDChessboardView)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-<a href="http://imgur.com/hjqp7p4"><img width=200 height=200 src="http://i.imgur.com/hjqp7p4.png" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/kcBBESo"><img width=200 height=200 src="http://i.imgur.com/kcBBESo.png" title="Hosted by imgur.com" /></a>
 
 Features
 ========
