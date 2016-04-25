@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FDChessboardView.xcodeproj">
+      location = "group:Example/FDChessboardView iOS.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:FDChessboardView.xcodeproj">
    </FileRef>
 </Workspace>
