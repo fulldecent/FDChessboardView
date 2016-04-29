@@ -11,18 +11,16 @@
 		D94BE1C21CCEBF2C0042282A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94BE1C01CCEBF2C0042282A /* Main.storyboard */; };
 		D94BE1C41CCEBF2C0042282A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94BE1C31CCEBF2C0042282A /* Assets.xcassets */; };
 		D94BE1D31CCEC1730042282A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BE1D21CCEC1730042282A /* AppDelegate.swift */; };
-		D9C326701CCEC68E004B5287 /* FDChessboardView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C3266F1CCEC68E004B5287 /* FDChessboardView.framework */; };
 		D9CBAE971CCEC4ED006EC128 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CBAE961CCEC4ED006EC128 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D94BE1B91CCEBF2C0042282A /* FDChessboardView iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDChessboardView iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94BE1B91CCEBF2C0042282A /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94BE1BE1CCEBF2C0042282A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D94BE1C11CCEBF2C0042282A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D94BE1C31CCEBF2C0042282A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94BE1C81CCEBF2C0042282A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94BE1D21CCEC1730042282A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9C3266F1CCEC68E004B5287 /* FDChessboardView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FDChessboardView.framework; path = "../../../Library/Developer/Xcode/DerivedData/FDChessboardView-drnxvuhwebozlwbplyvztoeylgrb/Build/Products/Debug-iphonesimulator/FDChessboardView.framework"; sourceTree = "<group>"; };
 		D9CBAE961CCEC4ED006EC128 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C326701CCEC68E004B5287 /* FDChessboardView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +38,7 @@
 		D94BE1B01CCEBF2C0042282A = {
 			isa = PBXGroup;
 			children = (
-				D9C3266F1CCEC68E004B5287 /* FDChessboardView.framework */,
-				D94BE1BB1CCEBF2C0042282A /* FDChessboardView iOS */,
+				D94BE1BB1CCEBF2C0042282A /* iOS Example */,
 				D94BE1BA1CCEBF2C0042282A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +46,12 @@
 		D94BE1BA1CCEBF2C0042282A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D94BE1B91CCEBF2C0042282A /* FDChessboardView iOS.app */,
+				D94BE1B91CCEBF2C0042282A /* iOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D94BE1BB1CCEBF2C0042282A /* FDChessboardView iOS */ = {
+		D94BE1BB1CCEBF2C0042282A /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				D9CBAE961CCEC4ED006EC128 /* Launch Screen.storyboard */,
@@ -65,16 +61,16 @@
 				D94BE1C31CCEBF2C0042282A /* Assets.xcassets */,
 				D94BE1C81CCEBF2C0042282A /* Info.plist */,
 			);
-			name = "FDChessboardView iOS";
+			name = "iOS Example";
 			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D94BE1B81CCEBF2C0042282A /* FDChessboardView iOS */ = {
+		D94BE1B81CCEBF2C0042282A /* iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D94BE1CB1CCEBF2C0042282A /* Build configuration list for PBXNativeTarget "FDChessboardView iOS" */;
+			buildConfigurationList = D94BE1CB1CCEBF2C0042282A /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
 				D94BE1B51CCEBF2C0042282A /* Sources */,
 				D94BE1B61CCEBF2C0042282A /* Frameworks */,
@@ -84,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "FDChessboardView iOS";
+			name = "iOS Example";
 			productName = "FDChessboardView iOS";
-			productReference = D94BE1B91CCEBF2C0042282A /* FDChessboardView iOS.app */;
+			productReference = D94BE1B91CCEBF2C0042282A /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D94BE1B41CCEBF2C0042282A /* Build configuration list for PBXProject "FDChessboardView iOS" */;
+			buildConfigurationList = D94BE1B41CCEBF2C0042282A /* Build configuration list for PBXProject "iOS Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D94BE1B81CCEBF2C0042282A /* FDChessboardView iOS */,
+				D94BE1B81CCEBF2C0042282A /* iOS Example */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +247,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.FDChessboardView.FDChessboardView-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS Example";
 			};
 			name = Debug;
 		};
@@ -262,14 +258,14 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.phor.FDChessboardView.FDChessboardView-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D94BE1B41CCEBF2C0042282A /* Build configuration list for PBXProject "FDChessboardView iOS" */ = {
+		D94BE1B41CCEBF2C0042282A /* Build configuration list for PBXProject "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D94BE1C91CCEBF2C0042282A /* Debug */,
@@ -278,7 +274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D94BE1CB1CCEBF2C0042282A /* Build configuration list for PBXNativeTarget "FDChessboardView iOS" */ = {
+		D94BE1CB1CCEBF2C0042282A /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D94BE1CC1CCEBF2C0042282A /* Debug */,

@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				D9E0667E1CCECAFF00E0D7CB /* Resources */,
-				D9FEF4B61CCEBC0D0013FBDD /* FDChessboardView */,
-				D9FEF4C21CCEBC0F0013FBDD /* FDChessboardViewTests */,
+				D9FEF4B61CCEBC0D0013FBDD /* Source */,
+				D9FEF4C21CCEBC0F0013FBDD /* Tests */,
 				D9FEF4B51CCEBC0D0013FBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,23 +112,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9FEF4B61CCEBC0D0013FBDD /* FDChessboardView */ = {
+		D9FEF4B61CCEBC0D0013FBDD /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				D94BE1CE1CCEBFD80042282A /* FDChessboardView.swift */,
 				D9FEF4B91CCEBC0D0013FBDD /* Info.plist */,
 			);
-			name = FDChessboardView;
 			path = Source;
 			sourceTree = "<group>";
 		};
-		D9FEF4C21CCEBC0F0013FBDD /* FDChessboardViewTests */ = {
+		D9FEF4C21CCEBC0F0013FBDD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				D9FEF4C31CCEBC100013FBDD /* FDChessboardViewTests.swift */,
 				D9FEF4C51CCEBC100013FBDD /* Info.plist */,
 			);
-			name = FDChessboardViewTests;
 			path = Tests;
 			sourceTree = "<group>";
 		};
