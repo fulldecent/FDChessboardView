@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D94BE1B81CCEBF2C0042282A"
                BuildableName = "iOS Example.app"
                BlueprintName = "iOS Example"
-               ReferencedContainer = "container:iOS Example.xcodeproj">
+               ReferencedContainer = "container:Example/iOS Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "D94BE1B81CCEBF2C0042282A"
             BuildableName = "iOS Example.app"
             BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            ReferencedContainer = "container:Example/iOS Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "D94BE1B81CCEBF2C0042282A"
             BuildableName = "iOS Example.app"
             BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            ReferencedContainer = "container:Example/iOS Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "D94BE1B81CCEBF2C0042282A"
             BuildableName = "iOS Example.app"
             BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            ReferencedContainer = "container:Example/iOS Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
