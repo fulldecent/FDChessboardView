@@ -10,7 +10,7 @@ import UIKit
 import FDChessboardView
 
 class ViewController: UIViewController {
-    @IBOutlet weak var chessboard: FDChessboardView!
+    @IBOutlet var chessboard: FDChessboardView!
     
     var piecesByIndex = [Int : FDChessboardPiece]()
     

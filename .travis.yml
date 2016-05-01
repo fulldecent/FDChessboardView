@@ -21,6 +21,8 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
+  - xcodebuild -list
+  - xcodebuild -workspace "$WORKSPACE" -list
 
   # Build and test Framework in Debug
   - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty

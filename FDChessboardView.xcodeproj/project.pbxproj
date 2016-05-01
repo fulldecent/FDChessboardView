@@ -96,8 +96,8 @@
 		D9FEF4AA1CCEBC0D0013FBDD = {
 			isa = PBXGroup;
 			children = (
-				D9E0667E1CCECAFF00E0D7CB /* Resources */,
 				D9FEF4B61CCEBC0D0013FBDD /* Source */,
+				D9E0667E1CCECAFF00E0D7CB /* Resources */,
 				D9FEF4C21CCEBC0F0013FBDD /* Tests */,
 				D9FEF4B51CCEBC0D0013FBDD /* Products */,
 			);
