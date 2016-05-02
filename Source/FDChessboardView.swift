@@ -16,9 +16,10 @@ public struct FDChessboardSquare {
     /// From 0...7
     public var rank: Int
     
+    /// A format like a4
     public var algebriac: String {
         get {
-            return String(UnicodeScalar(96 + file)) + String(rank)
+            return String(UnicodeScalar(96 + file)) + String(rank + 1)
         }
     }
     
