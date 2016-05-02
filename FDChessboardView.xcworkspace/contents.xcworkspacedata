@@ -5,6 +5,6 @@
       location = "group:FDChessboardView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/fulldecent/Developer/FDChessboardView/Example/iOS Example.xcodeproj">
+      location = "group:Example/iOS Example.xcodeproj">
    </FileRef>
 </Workspace>
