@@ -42,17 +42,40 @@ public struct FDChessboardSquare {
 
 /// The pieces on a chess board
 public enum FDChessboardPiece: String {
+    /// A white pawn
     case WhitePawn = "wp"
+
+    /// A black pawn
     case BlackPawn = "bp"
+
+    /// A white knight
     case WhiteKnight = "wn"
+
+    /// A black knight
     case BlackKnight = "bn"
+
+    /// A white bishop
     case WhiteBishop = "wb"
+
+    /// A black bishop
     case BlackBishop = "bb"
+
+    /// A white rook
     case WhiteRook = "wr"
+
+    /// A black rook
     case BlackRook = "br"
+
+    /// A white queen
     case WhiteQueen = "wq"
+
+    /// A black queen
     case BlackQueen = "bq"
+
+    /// A white king
     case WhiteKing = "wk"
+
+    /// A black king
     case BlackKing = "bk"
 }
 
@@ -85,12 +108,12 @@ public protocol FDChessboardViewDelegate: class {
 }
 
 /// Display for a chess board
-public class FDChessboardView: UIView {
+@IBDesignable public class FDChessboardView: UIView {
     /// Color for "white" board squares
-    public var lightBackgroundColor = UIColor(red: 222.0/255, green:196.0/255, blue:160.0/255, alpha:1)
+    @IBInspectable public var lightBackgroundColor: UIColor = UIColor(red: 222.0/255, green:196.0/255, blue:160.0/255, alpha:1)
 
     /// Color for "black" board squares
-    public var darkBackgroundColor = UIColor(red: 160.0/255, green:120.0/255, blue:55.0/255, alpha:1)
+    @IBInspectable public var darkBackgroundColor: UIColor = UIColor(red: 160.0/255, green:120.0/255, blue:55.0/255, alpha:1)
 
     /// Color for where a piece is moving to
     public var targetBackgroundColor = UIColor(hue: 0.75, saturation:0.5, brightness:0.5, alpha:1.0)

@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.2.0...master)
 
 #### Added
+- Added IBInspectable / IBDesignable
+  - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#11](https://github.com/fulldecent/FDBarGuage/issues/11).
 - Full API documentation
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#6](https://github.com/fulldecent/FDBarGuage/issues/6).
