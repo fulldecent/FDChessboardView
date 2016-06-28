@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.2.0...master)
 
 #### Added
+- Documented release process
+  - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#10](https://github.com/fulldecent/FDBarGuage/issues/10).
 - Change Log
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#7](https://github.com/fulldecent/FDBarGuage/issues/7).
