@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.2.0...master)
+## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.3.0...master)
+
+---
+
+## [0.3.0](https://github.com/fulldecent/FDChessboardView/releases/tag/0.3.0)
+Released on 2016-06-27.
 
 #### Added
 - Added IBInspectable / IBDesignable
