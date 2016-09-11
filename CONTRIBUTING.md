@@ -6,7 +6,7 @@ All contributors are welcome. Please use issues and pull requests to contribute 
 
 1. Confirm the build is passing in travis
    1. This automatically checks the pod file is building
-2. Create a release commit, see [prior releases](https://github.com/fulldecent/FDBarGuage/releases) for an example
+2. Create a release commit, see [prior releases](https://github.com/fulldecent/FDChessboardView/releases) for an example
    1. Update the change log to label the latest improvements under the new version name
    2. Update the podspec version number
 3. Tag the release in GitHub

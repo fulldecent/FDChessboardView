@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.3.0...master)
 
+#### Changed
+
+- Updated project for Swift 3
+
 ---
 
 ## [0.3.0](https://github.com/fulldecent/FDChessboardView/releases/tag/0.3.0)
