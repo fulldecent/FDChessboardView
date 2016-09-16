@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.4.0...master)
 
+#### Changed
+
+- Update project settings from Xcode recommendation
+
 ---
 
 ## [0.4.0](https://github.com/fulldecent/FDChessboardView/releases/tag/0.4.0)

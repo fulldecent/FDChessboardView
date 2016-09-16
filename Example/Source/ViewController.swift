@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
         let position: String = "RNBQKBNRPPPPPPPP................................pppppppprnbqkbnr"
         
-        for (index, letter) in position.characters.enumerate() {
+        for (index, letter) in position.characters.enumerated() {
             switch letter {
             case "K":
                 piecesByIndex[index] = .WhiteKing
@@ -54,15 +54,15 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: FDChessboardViewDataSource {
-    func chessboardView(board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece? {
+    func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece? {
         return piecesByIndex[square.index]
     }
     
-    func chessboardViewLastMove(board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
+    func chessboardViewLastMove(_ board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
         return nil
     }
     
-    func chessboardViewPremove(board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
+    func chessboardViewPremove(_ board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
         return nil
     }
 }
