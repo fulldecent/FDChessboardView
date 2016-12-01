@@ -10,9 +10,13 @@ import XCTest
 @testable import FDChessboardView
 
 class FDChessboardViewTests: XCTestCase {
+
+    var chessboard: FDChessboardView?
+    let squares = (FDChessboardSquare(index: 0), FDChessboardSquare(index: 1))
     
     override func setUp() {
         super.setUp()
+        chessboard = FDChessboardView()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -23,7 +27,41 @@ class FDChessboardViewTests: XCTestCase {
     
     func testExample() {
         XCTAssert(true)
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+
+    func testChessboard() {
+        XCTAssert(chessboard != nil)
+    }
+
+    func testResizing() {
+        XCTAssert(chessboard?.translatesAutoresizingMaskIntoConstraints == false)
+    }
+
+    func testBooleans() {
+        XCTAssert(chessboard?.doesAnimate == true)
+        XCTAssert(chessboard?.doesShowLegalSquares == true)
+        XCTAssert(chessboard?.doesShowLastMove == true)
+        XCTAssert(chessboard?.doesShowPremove == true)
+    }
+
+    func testMovePiece() {
+        let val = chessboard?.movePieceAtCoordinate(squares.0, toCoordinate: squares.1)
+        XCTAssert(val == true)
+    }
+
+    func testMoveAndPromotePiece() {
+        let val = chessboard?.movePieceAtCoordinate(squares.0, toCoordinate: squares.1, andPromoteTo: .WhiteQueen)
+        XCTAssert(val == true)
+    }
+
+    func testPremovePiece() {
+        let val = chessboard?.premovePieceAtCoordinate(squares.0, toCoordinate: squares.1)
+        XCTAssert(val == true)
+    }
+
+    func testPremoveAndPromotePiece() {
+        let val = chessboard?.premovePieceAtCoordinate(squares.0, toCoordinate: squares.1, andPromoteTo: .WhiteQueen)
+        XCTAssert(val == true)
+    }
+
 }
