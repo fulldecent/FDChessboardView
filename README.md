@@ -9,6 +9,8 @@ FDChessboardView
 
 <a href="http://imgur.com/kcBBESo"><img width=200 height=200 src="http://i.imgur.com/kcBBESo.png" title="Hosted by imgur.com" /></a>
 
+**:hamburger: Virtual tip jar: https://amazon.com/hz/wishlist/ls/EE78A23EEGQB**
+
 Features
 ========
 
