@@ -22,6 +22,7 @@
 		D9E066961CCECB3200E0D7CB /* wr.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E0668A1CCECB3200E0D7CB /* wr.png */; };
 		D9FEF4BF1CCEBC0F0013FBDD /* FDChessboardView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* FDChessboardView.framework */; };
 		D9FEF4C41CCEBC100013FBDD /* FDChessboardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEF4C31CCEBC100013FBDD /* FDChessboardViewTests.swift */; };
+		E93B996B1FFEDECA00D2A2AC /* FDFENChessboardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B996A1FFEDECA00D2A2AC /* FDFENChessboardViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D9FEF4BE1CCEBC0F0013FBDD /* FDChessboardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDChessboardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4C31CCEBC100013FBDD /* FDChessboardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDChessboardViewTests.swift; sourceTree = "<group>"; };
 		D9FEF4C51CCEBC100013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E93B996A1FFEDECA00D2A2AC /* FDFENChessboardViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFENChessboardViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		D9FEF4B61CCEBC0D0013FBDD /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E93B996A1FFEDECA00D2A2AC /* FDFENChessboardViewDataSource.swift */,
 				D94BE1CE1CCEBFD80042282A /* FDChessboardView.swift */,
 				D9FEF4B91CCEBC0D0013FBDD /* Info.plist */,
 			);
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94BE1CF1CCEBFD80042282A /* FDChessboardView.swift in Sources */,
+				E93B996B1FFEDECA00D2A2AC /* FDFENChessboardViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
