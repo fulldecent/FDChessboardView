@@ -17,52 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let position: String = "RNBQKBNRPPPPPPPP................................pppppppprnbqkbnr"
-        
-        for (index, letter) in position.characters.enumerated() {
-            switch letter {
-            case "K":
-                piecesByIndex[index] = .WhiteKing
-            case "k":
-                piecesByIndex[index] = .BlackKing
-            case "Q":
-                piecesByIndex[index] = .WhiteQueen
-            case "q":
-                piecesByIndex[index] = .BlackQueen
-            case "R":
-                piecesByIndex[index] = .WhiteRook
-            case "r":
-                piecesByIndex[index] = .BlackRook
-            case "B":
-                piecesByIndex[index] = .WhiteBishop
-            case "b":
-                piecesByIndex[index] = .BlackBishop
-            case "N":
-                piecesByIndex[index] = .WhiteKnight
-            case "n":
-                piecesByIndex[index] = .BlackKnight
-            case "P":
-                piecesByIndex[index] = .WhitePawn
-            case "p":
-                piecesByIndex[index] = .BlackPawn
-            default:
-                break
-            }
-        }
-        self.chessboard.dataSource = self
+      self.chessboard.dataSource = FDFENChessboardDataSource("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
     }
 }
 
-extension ViewController: FDChessboardViewDataSource {
-    func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece? {
-        return piecesByIndex[square.index]
-    }
-    
-    func chessboardViewLastMove(_ board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
-        return nil
-    }
-    
-    func chessboardViewPremove(_ board: FDChessboardView) -> (from: FDChessboardSquare, to: FDChessboardSquare)? {
-        return nil
-    }
-}

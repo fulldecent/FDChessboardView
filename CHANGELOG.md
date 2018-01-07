@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
 
 #### Added
 - Support for Swift 4
+- Support for the Forsyth–Edwards Notation
+  - Added by [David Airapetyan](https://github.com/davidair).
 
 ---
 
