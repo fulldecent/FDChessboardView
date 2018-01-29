@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'FDChessboardView' => ['Resources/**/*.{png}']
   }
+  s.swift_version = '4.0'
 end
