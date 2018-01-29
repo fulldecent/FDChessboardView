@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDChessboardView/compare/0.4.0...master)
+## [Master](https://github.com/fulldecent/FDChessboardView/compare/1.1.0...master)
+
+---
+
+## [1.1.0](https://github.com/fulldecent/FDChessboardView/releases/tag/1.1.0)
+Released on 2018-01-29.
 
 #### Added
 - Support for Swift 4
