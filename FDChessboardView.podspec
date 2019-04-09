@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FDChessboardView'
-  s.version = '1.1.0'
+  s.version = '2.0.0'
   s.license = 'MIT'
   s.summary = 'A view controller for chess boards'
   s.homepage = 'https://github.com/fulldecent/FDChessboardView'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'FDChessboardView' => ['Resources/**/*.{png}']
   }
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
 end
