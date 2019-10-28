@@ -10,73 +10,32 @@ import Foundation
 import UIKit
 
 /// The location of a square on a chess board
-public struct FDChessboardSquare {
-    /// From 0...7
-    public var file: Int
-
-    /// From 0...7
-    public var rank: Int
-
-    /// A format like a4
-    public var algebriac: String {
-        get {
-            return String(describing: UnicodeScalar(96 + file)) + String(rank + 1)
-        }
-    }
-
-    public var index: Int {
-        get {
-            return rank * 8 + file
-        }
-        set {
-            file = index % 8
-            rank = index / 8
-        }
-    }
+public struct FDChessboardSquare: Hashable {
+    /// From 0...63
+    public let index: Int
+    
+    /// From 0...7 (a...h)
+    public let file: Int
+    
+    /// From 0...7 (white king starting position to black king starting position)
+    public let rank: Int
+    
+    /// Like a4
+    public let algebraic: String
 
     public init(index newIndex: Int) {
+        index = newIndex
         file = newIndex % 8
         rank = newIndex / 8
+        algebraic = ["a","b","c","d","e","f","g","h"][file] + String(rank + 1)
     }
-}
-
-/// The pieces on a chess board
-public enum FDChessboardPiece: String {
-    /// A white pawn
-    case WhitePawn = "wp"
-
-    /// A black pawn
-    case BlackPawn = "bp"
-
-    /// A white knight
-    case WhiteKnight = "wn"
-
-    /// A black knight
-    case BlackKnight = "bn"
-
-    /// A white bishop
-    case WhiteBishop = "wb"
-
-    /// A black bishop
-    case BlackBishop = "bb"
-
-    /// A white rook
-    case WhiteRook = "wr"
-
-    /// A black rook
-    case BlackRook = "br"
-
-    /// A white queen
-    case WhiteQueen = "wq"
-
-    /// A black queen
-    case BlackQueen = "bq"
-
-    /// A white king
-    case WhiteKing = "wk"
-
-    /// A black king
-    case BlackKing = "bk"
+    
+    public init(newRank: Int, newFile: Int) {
+        rank = newRank
+        file = newFile
+        index = newRank * 8 + newFile
+        algebraic = ["a","b","c","d","e","f","g","h"][file] + String(rank + 1)
+    }
 }
 
 public protocol FDChessboardViewDataSource: class {
@@ -94,17 +53,8 @@ public protocol FDChessboardViewDelegate: class {
     /// Where can this piece move to?
     func chessboardView(_ board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardSquare]
 
-    /// Before a move happens (cannot be stopped)
-    func chessboardView(_ board: FDChessboardView, willMoveFrom from: FDChessboardSquare, to: FDChessboardSquare)
-
     /// After a move happened
-    func chessboardView(_ board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare)
-
-    /// Before a move happens (cannot be stopped)
-    func chessboardView(_ board: FDChessboardView, willMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece)
-
-    /// After a move happened
-    func chessboardView(_ board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece)
+    func chessboardView(_ board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece?)
 }
 
 /// Display for a chess board
@@ -146,21 +96,21 @@ public protocol FDChessboardViewDelegate: class {
     /// Should legal squares be shown when a piece is selected?
     open var doesShowLegalSquares: Bool = true
 
-    /// Should the lash move be shown?
+    /// Should the last move be shown?
     open var doesShowLastMove: Bool = true
 
     /// Should premove be shown?
     open var doesShowPremove: Bool = true
 
-    fileprivate lazy var tilesAtIndex = [UIView]()
+    private lazy var tilesAtIndex = [UIView]()
 
-    fileprivate var pieceAtIndex = [Int : FDChessboardPiece]()
+    private var pieceAtIndex = [Int : FDChessboardPiece]()
 
-    fileprivate var pieceImageViewAtIndex = [Int : UIImageView]()
+    private var pieceImageViewAtIndex = [Int : UIImageView]()
 
-    fileprivate var lastMoveArrow: UIView? = nil
+    private var lastMoveArrow: UIView? = nil
 
-    fileprivate var premoveArrow: UIView? = nil
+    private var premoveArrow: UIView? = nil
 
     /// UIView initializer
     public override init(frame: CGRect) {
