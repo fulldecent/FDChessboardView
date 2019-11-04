@@ -9,10 +9,8 @@ FDChessboardView
 
 <a href="http://imgur.com/kcBBESo"><img width=200 height=200 src="http://i.imgur.com/kcBBESo.png" title="Hosted by imgur.com" /></a>
 
-**:hamburger: Virtual tip jar: https://amazon.com/hz/wishlist/ls/EE78A23EEGQB**
-
 Features
-========
+--------
 
  * High resolution graphics
  * Customizable themes and game graphics
@@ -22,223 +20,124 @@ Features
  * Supports a minimum deployment target of iOS 8 or OS X Mavericks (10.9)
 
 Usage
-=====
+-----
 
-Import, add the view to your storyboard and then set it up with:
+Import the project and implement a data source:
 
 ```swift
 import FDChessboardView
-...
-self.chessboard.dataSource = self
-```
 
-Then implement the data source:
+public protocol FDChessboardViewDataSource: class {
+    /// What piece is on the square?
+    func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece?
 
-```swift
-func chessboardView(board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece? {
-    return piecesByIndex[square.index] // you figure out which piece to show
+    /// The last move
+    func chessboardViewLastMove(_ board: FDChessboardView) -> (from:FDChessboardSquare, to:FDChessboardSquare)?
+
+    /// The premove
+    func chessboardViewPremove(_ board: FDChessboardView) -> (from:FDChessboardSquare, to:FDChessboardSquare)?
 }
 ```
 
-Here is the full API:
+If your application will allow the pieces to be moved, implement a delegate:
+
+```swift
+public protocol FDChessboardViewDelegate: class {
+    /// Where can this piece move to?
+    func chessboardView(_ board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardSquare]
+
+    /// Before a move happenes
+    func chessboardView(_ board: FDChessboardView, canMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece?) -> Bool
+
+    /// After a move happened
+    func chessboardView(_ board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece?)
+}
+```
+
+Then you can customize the view or call certain actions:
 
 ```swift
 /// The location of a square on a chess board
-public struct FDChessboardSquare {
-
-    /// From 0...7
-    public var file: Int
-
-    /// From 0...7
-    public var rank: Int
-
-    /// A format like a4
-    public var algebriac: String { get }
-
-    public var index: Int { get set }
-
-    public init(index newIndex: Int)
+public struct FDChessboardSquare: Hashable {
+    /// From 0...7 (a...h)
+    public let file: Int
+    
+    /// From 0...7 (white king starting position to black king starting position)
+    public let rank: Int
 }
 
 /// The pieces on a chess board
-public enum FDChessboardPiece : String {
-
+public enum FDChessboardPiece: String {
     case WhitePawn
-
     case BlackPawn
-
     case WhiteKnight
-
     case BlackKnight
-
     case WhiteBishop
-
     case BlackBishop
-
     case WhiteRook
-
     case BlackRook
-
     case WhiteQueen
-
     case BlackQueen
-
     case WhiteKing
-
     case BlackKing
 }
 
-public protocol FDChessboardViewDataSource : class {
-
-    /// What piece is on the square?
-    public func chessboardView(board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardView.FDChessboardPiece?
-
-    /// The last move
-    public func chessboardViewLastMove(board: FDChessboardView) -> (from: FDChessboardView.FDChessboardSquare, to: FDChessboardView.FDChessboardSquare)?
-
-    /// The premove
-    public func chessboardViewPremove(board: FDChessboardView) -> (from: FDChessboardView.FDChessboardSquare, to: FDChessboardView.FDChessboardSquare)?
-}
-
-public protocol FDChessboardViewDelegate : class {
-
-    /// Where can this piece move to?
-    public func chessboardView(board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardView.FDChessboardSquare]
-
-    /// Before a move happens (cannot be stopped)
-    public func chessboardView(board: FDChessboardView, willMoveFrom from: FDChessboardSquare, to: FDChessboardSquare)
-
-    /// After a move happened
-    public func chessboardView(board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare)
-
-    /// Before a move happens (cannot be stopped)
-    public func chessboardView(board: FDChessboardView, willMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece)
-
-    /// After a move happened
-    public func chessboardView(board: FDChessboardView, didMoveFrom from: FDChessboardSquare, to: FDChessboardSquare, withPromotion promotion: FDChessboardPiece)
-}
-
 /// Display for a chess board
-public class FDChessboardView : UIView {
-
-    /// Color for "white" board squares
-    public var lightBackgroundColor: UIColor
-
-    /// Color for "black" board squares
-    public var darkBackgroundColor: UIColor
-
-    /// Color for where a piece is moving to
-    public var targetBackgroundColor: UIColor
-
-    /// Color for a legal square target
-    public var legalBackgroundColor: UIColor
-
-    /// Color for the last move square
-    public var lastMoveColor: UIColor
-
-    /// Color for a premove square
-    public var premoveColor: UIColor
-
-    /// Path for custom piece graphics
-    public var pieceGraphicsDirectoryPath: String?
-
-    /// Datasource to say which pieces are on each square
-    public weak var dataSource: FDChessboardViewDataSource? { get set }
-
-    /// Handler for user interaction with the view
-    public weak var delegate: FDChessboardViewDelegate?
-
-    /// Should piece moves be animated?
-    public var doesAnimate: Bool
-
-    /// Should legal squares be shown when a piece is selected?
-    public var doesShowLegalSquares: Bool
-
-    /// Should the lash move be shown?
-    public var doesShowLastMove: Bool
-
-    /// Should premove be shown?
-    public var doesShowPremove: Bool
-
-    /// UIView initializer
-    public override init(frame: CGRect)
-
-    /// UIView initializer
-    required public init?(coder aDecoder: NSCoder)
+@IBDesignable open class FDChessboardView: UIView {
+    @IBInspectable open var lightBackgroundColor: UIColor
+    @IBInspectable open var darkBackgroundColor: UIColor
+    open var targetBackgroundColor: UIColor
+    open var legalBackgroundColor: UIColor
+    open var lastMoveColor: UIColor
+    open var premoveColor: UIColor
+    open weak var dataSource: FDChessboardViewDataSource?
+    open weak var delegate: FDChessboardViewDelegate?
+    open var doesAnimate: Bool
+    open var doesShowLegalSquares: Bool
+    open var doesShowLastMove: Bool
+    open var doesShowPremove: Bool
 
     /// Add a piece onto the board
-    public func setPiece(piece: FDChessboardPiece?, forSquare square: FDChessboardSquare)
+    open func setPiece(_ piece: FDChessboardPiece?, forSquare square: FDChessboardSquare)
 
     /// Repull all board information from data source
-    public func reloadData()
+    open func reloadData()
 
-    /// Move a piece on the board
-    public func movePieceAtCoordinate(from: FDChessboardSquare, toCoordinate to: FDChessboardSquare) -> Bool
-
-    /// Move a piece on the board
-    public func movePieceAtCoordinate(from: FDChessboardSquare, toCoordinate to: FDChessboardSquare, andPromoteTo piece: FDChessboardPiece) -> Bool
-
-    /// Premove a piece on the board
-    public func premovePieceAtCoordinate(from: FDChessboardSquare, toCoordinate to: FDChessboardSquare) -> Bool
-
-    /// Premove a piece on the board
-    public func premovePieceAtCoordinate(from: FDChessboardSquare, toCoordinate to: FDChessboardSquare, andPromoteTo piece: FDChessboardPiece) -> Bool
+    /// Move a piece on the board, clears any prior premove
+    open func move(_ piece: FDChessboardPiece, from: FDChessboardSquare, to: FDChessboardSquare, promotedTo promoted: FDChessboardPiece?)
+    
+    /// Premove a piece on the board, clears any prior premove
+    open func premove(_ piece: FDChessboardPiece, from: FDChessboardSquare, to: FDChessboardSquare, promotedTo promoted: FDChessboardPiece?)
+    
+    /// Removes any premove on the board
+    open func clearPremove()
+    
+    /// Move a piece on the board, clears any prior premove
+    open func unmove(_ piece: FDChessboardPiece, from: FDChessboardSquare, to: FDChessboardSquare, promotedTo promoted: FDChessboardPiece?, capturing: FDChessboardPiece)
 }
 ```
-
-Installation
-============
 
 ## Installation
 
+Add FDChessboardView to your project using Swift Package Manager. In Xcode that is simply: File > Swift Packages > Add Package Dependency... and you're done. Alternative installations options are shown below for legacy projects.
+
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-> CocoaPods 0.39.0+ is required to build FDChessboardView 0.1.0+.
-
-To integrate FDChessboardView into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-use_frameworks!
-
-pod 'FDChessboardView', '~> 0.1'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
+If you are already using [CocoaPods](http://cocoapods.org), just add 'FDChessboardView' to your `Podfile` then run `pod install`.
 
 ### Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-
-```bash
-$ brew update
-$ brew install carthage
-```
-
-To integrate FDChessboardView into your Xcode project using Carthage, specify it in your `Cartfile`:
+If you are already using [Carthage](https://github.com/Carthage/Carthage), just add to your `Cartfile`:
 
 ```ogdl
 github "fulldecent/FDChessboardView" ~> 0.1
 ```
 
-Run `carthage update` to build the framework and drag the built `FDChessboardView.framework` into your Xcode project.
+Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
 
 
-Upcoming Features
-=================
+Upcoming features
+-----------------
 
 These following items are in the API for discussion and awaiting implementation:
 
@@ -249,7 +148,12 @@ These following items are in the API for discussion and awaiting implementation:
  * Premove
 
 
-See Also
-===========
+See also
+-----------
 
 See also Kibitz for Mac which is making a comeback https://github.com/fulldecent/kibitz
+
+
+## License
+
+FDChessboardView is available under the MIT license. See [the LICENSE file](LICENSE) for more information.

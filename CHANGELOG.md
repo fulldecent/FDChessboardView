@@ -1,10 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
-`FDBarGuage` adheres to [Semantic Versioning](http://semver.org/).
+`FDChessboardView` adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/2.0.0...master)
+
+#### Added
+- Full support for Swift Package Manager
 
 ---
 
