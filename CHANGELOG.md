@@ -4,14 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDChessboardView/compare/2.0.0...master)
+## [Master](https://github.com/fulldecent/FDChessboardView/compare/4.0.0...master)
+
+---
+
+## [3.0.0](https://github.com/fulldecent/FDChessboardView/releases/tag/4.0.0)
+Released on 2019-11-04.
 
 #### Added
 - Full support for Swift Package Manager
 
 ---
 
-## [2.0.0](https://github.com/fulldecent/FDChessboardView/releases/tag/1.1.0)
+## [2.0.0](https://github.com/fulldecent/FDChessboardView/releases/tag/2.0.0)
 Released on 2019-04-08.
 
 #### Added
