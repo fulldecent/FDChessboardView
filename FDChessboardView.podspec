@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FDChessboardView'
-  s.version = '2.0.0'
+  s.version = '3.0.0'
   s.license = 'MIT'
   s.summary = 'A view controller for chess boards'
   s.homepage = 'https://github.com/fulldecent/FDChessboardView'
