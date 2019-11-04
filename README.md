@@ -19,6 +19,25 @@ Features
  * Very clean API, this is just a view
  * Supports a minimum deployment target of iOS 8 or OS X Mavericks (10.9)
 
+## Installation
+
+Add FDChessboardView to your project using Swift Package Manager. In Xcode that is simply: File > Swift Packages > Add Package Dependency... and you're done. Alternative installations options are shown below for legacy projects.
+
+### CocoaPods
+
+If you are already using [CocoaPods](http://cocoapods.org), just add 'FDChessboardView' to your `Podfile` then run `pod install`.
+
+### Carthage
+
+If you are already using [Carthage](https://github.com/Carthage/Carthage), just add to your `Cartfile`:
+
+```ogdl
+github "fulldecent/FDChessboardView" ~> 0.1
+```
+
+Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
+
+
 Usage
 -----
 
@@ -116,25 +135,6 @@ public enum FDChessboardPiece: String {
     open func unmove(_ piece: FDChessboardPiece, from: FDChessboardSquare, to: FDChessboardSquare, promotedTo promoted: FDChessboardPiece?, capturing: FDChessboardPiece)
 }
 ```
-
-## Installation
-
-Add FDChessboardView to your project using Swift Package Manager. In Xcode that is simply: File > Swift Packages > Add Package Dependency... and you're done. Alternative installations options are shown below for legacy projects.
-
-### CocoaPods
-
-If you are already using [CocoaPods](http://cocoapods.org), just add 'FDChessboardView' to your `Podfile` then run `pod install`.
-
-### Carthage
-
-If you are already using [Carthage](https://github.com/Carthage/Carthage), just add to your `Cartfile`:
-
-```ogdl
-github "fulldecent/FDChessboardView" ~> 0.1
-```
-
-Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
-
 
 Upcoming features
 -----------------
