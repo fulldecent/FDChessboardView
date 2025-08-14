@@ -1,7 +1,7 @@
 FDChessboardView
 ================
 
-[![CI Status](http://img.shields.io/travis/fulldecent/FDChessboardView.svg?style=flat)](https://travis-ci.org/fulldecent/FDChessboardView)
+[![CI Status](https://github.com/fulldecent/FDChessboardView/workflows/Swift/badge.svg)](https://github.com/fulldecent/FDChessboardView/actions)
 [![Version](https://img.shields.io/cocoapods/v/FDChessboardView.svg?style=flat)](http://cocoadocs.org/docsets/FDChessboardView)
 [![License](https://img.shields.io/cocoapods/l/FDChessboardView.svg?style=flat)](http://cocoadocs.org/docsets/FDChessboardView)
 [![Platform](https://img.shields.io/cocoapods/p/FDChessboardView.svg?style=flat)](http://cocoadocs.org/docsets/FDChessboardView)
@@ -17,7 +17,7 @@ Features
  * Supports all single board chess variants: suicide, losers, atomic, etc.
  * Supports games with odd piece arrangement and non-standard castling (Fisher 960)
  * Very clean API, this is just a view
- * Supports a minimum deployment target of iOS 8 or OS X Mavericks (10.9)
+ * Supports a minimum deployment target of iOS 13.0
 
 ## Installation
 
@@ -32,7 +32,7 @@ If you are already using [CocoaPods](http://cocoapods.org), just add 'FDChessboa
 If you are already using [Carthage](https://github.com/Carthage/Carthage), just add to your `Cartfile`:
 
 ```ogdl
-github "fulldecent/FDChessboardView" ~> 0.1
+github "fulldecent/FDChessboardView" ~> 3.0
 ```
 
 Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
@@ -46,7 +46,7 @@ Import the project and implement a data source:
 ```swift
 import FDChessboardView
 
-public protocol FDChessboardViewDataSource: class {
+public protocol FDChessboardViewDataSource: AnyObject {
     /// What piece is on the square?
     func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece?
 
@@ -61,7 +61,7 @@ public protocol FDChessboardViewDataSource: class {
 If your application will allow the pieces to be moved, implement a delegate:
 
 ```swift
-public protocol FDChessboardViewDelegate: class {
+public protocol FDChessboardViewDelegate: AnyObject {
     /// Where can this piece move to?
     func chessboardView(_ board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardSquare]
 

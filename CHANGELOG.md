@@ -6,6 +6,20 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/fulldecent/FDChessboardView/compare/4.0.0...master)
 
+#### Changed
+- Modernized build system with Swift 6.0 tools version
+- Updated minimum iOS deployment target to 13.0
+- Updated Swift version to 5.9 in podspec
+- Migrated from Travis CI to GitHub Actions
+- Updated protocol constraints from deprecated `class` to `AnyObject`
+- Removed deprecated test manifest files (XCTestManifests.swift, LinuxMain.swift)
+- Added proper platform support for iOS, macOS, tvOS, and watchOS
+
+#### Fixed
+- Fixed builds on modern Swift versions
+- Updated GitHub Actions workflow with proper platform matrix
+- Removed broken CocoaPods quality check script
+
 ---
 
 ## [3.0.0](https://github.com/fulldecent/FDChessboardView/releases/tag/4.0.0)
