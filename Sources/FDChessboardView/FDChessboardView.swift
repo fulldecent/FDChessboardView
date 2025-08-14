@@ -38,7 +38,7 @@ public struct FDChessboardSquare: Hashable {
     }
 }
 
-public protocol FDChessboardViewDataSource: class {
+public protocol FDChessboardViewDataSource: AnyObject {
     /// What piece is on the square?
     func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece?
 
@@ -49,7 +49,7 @@ public protocol FDChessboardViewDataSource: class {
     func chessboardViewPremove(_ board: FDChessboardView) -> (from:FDChessboardSquare, to:FDChessboardSquare)?
 }
 
-public protocol FDChessboardViewDelegate: class {
+public protocol FDChessboardViewDelegate: AnyObject {
     /// Where can this piece move to?
     func chessboardView(_ board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardSquare]
 
