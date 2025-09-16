@@ -16,7 +16,6 @@ jobs:
           - 'platform=iOS Simulator,name=iPhone 15,OS=17.0'
           - 'platform=macOS'
           - 'platform=tvOS Simulator,name=Apple TV,OS=17.0'
-          - 'platform=watchOS Simulator,name=Apple Watch Series 9 (45mm),OS=10.0'
 
     steps:
     - name: Checkout

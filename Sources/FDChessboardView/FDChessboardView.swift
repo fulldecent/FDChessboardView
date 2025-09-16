@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// The location of a square on a chess board
 public struct FDChessboardSquare: Hashable {
@@ -37,6 +39,8 @@ public struct FDChessboardSquare: Hashable {
         algebraic = ["a","b","c","d","e","f","g","h"][file] + String(rank + 1)
     }
 }
+
+#if canImport(UIKit)
 
 public protocol FDChessboardViewDataSource: AnyObject {
     /// What piece is on the square?
@@ -266,3 +270,5 @@ tile.backgroundColor = self.legalBackgroundColor;
         ///TODO: implement
     }
 }
+
+#endif
