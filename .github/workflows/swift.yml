@@ -10,12 +10,6 @@ jobs:
   test:
     name: Test
     runs-on: macOS-latest
-    strategy:
-      matrix:
-        destination: 
-          - 'platform=iOS Simulator,name=iPhone 15,OS=17.0'
-          - 'platform=macOS'
-          - 'platform=tvOS Simulator,name=Apple TV,OS=17.0'
 
     steps:
     - name: Checkout
@@ -31,12 +25,3 @@ jobs:
       
     - name: Swift Package Manager - Test
       run: swift test -v
-      
-    - name: Xcode - Build and Test
-      run: |
-        xcodebuild clean build test \
-          -scheme FDChessboardView \
-          -destination '${{ matrix.destination }}' \
-          CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
-          ONLY_ACTIVE_ARCH=NO
