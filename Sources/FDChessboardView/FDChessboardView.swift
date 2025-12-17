@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// The location of a square on a chess board
 public struct FDChessboardSquare: Hashable {
@@ -38,7 +40,9 @@ public struct FDChessboardSquare: Hashable {
     }
 }
 
-public protocol FDChessboardViewDataSource: class {
+#if canImport(UIKit)
+
+public protocol FDChessboardViewDataSource: AnyObject {
     /// What piece is on the square?
     func chessboardView(_ board: FDChessboardView, pieceForSquare square: FDChessboardSquare) -> FDChessboardPiece?
 
@@ -49,7 +53,7 @@ public protocol FDChessboardViewDataSource: class {
     func chessboardViewPremove(_ board: FDChessboardView) -> (from:FDChessboardSquare, to:FDChessboardSquare)?
 }
 
-public protocol FDChessboardViewDelegate: class {
+public protocol FDChessboardViewDelegate: AnyObject {
     /// Where can this piece move to?
     func chessboardView(_ board: FDChessboardView, legalDestinationsForPieceAtSquare from: FDChessboardSquare) -> [FDChessboardSquare]
 
@@ -266,3 +270,5 @@ tile.backgroundColor = self.legalBackgroundColor;
         ///TODO: implement
     }
 }
+
+#endif

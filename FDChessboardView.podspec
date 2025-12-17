@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/fulldecent/FDChessboardView'
   s.authors = { 'William Entriken' => 'github.com@phor.net' }
   s.source = { :git => 'https://github.com/fulldecent/FDChessboardView.git', :tag => s.version }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
   s.source_files = 'Sources/**/*.swift'
-  s.swift_version = '5.0'
+  s.swift_version = '5.9'
 end
