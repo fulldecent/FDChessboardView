@@ -12,12 +12,12 @@ FDChessboardView
 Features
 --------
 
- * High resolution graphics
- * Customizable themes and game graphics
- * Supports all single board chess variants: suicide, losers, atomic, etc.
- * Supports games with odd piece arrangement and non-standard castling (Fisher 960)
- * Very clean API, this is just a view
- * Supports a minimum deployment target of iOS 13.0
+* High resolution graphics
+* Customizable themes and game graphics
+* Supports all single board chess variants: suicide, losers, atomic, etc.
+* Supports games with odd piece arrangement and non-standard castling (Fisher 960)
+* Very clean API, this is just a view
+* Supports a minimum deployment target of iOS 13.0
 
 ## Installation
 
@@ -36,7 +36,6 @@ github "fulldecent/FDChessboardView" ~> 3.0
 ```
 
 Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
-
 
 Usage
 -----
@@ -141,18 +140,16 @@ Upcoming features
 
 These following items are in the API for discussion and awaiting implementation:
 
- * Display for last move
- * Mutable game state (i.e. can move the pieces)
- * Animation for piece moves
- * Highlighting of legal squares for a piece after begin dragging
- * Premove
-
+* Display for last move
+* Mutable game state (i.e. can move the pieces)
+* Animation for piece moves
+* Highlighting of legal squares for a piece after begin dragging
+* Premove
 
 See also
 -----------
 
-See also Kibitz for Mac which is making a comeback https://github.com/fulldecent/kibitz
-
+See also Kibitz for Mac which is making a comeback <https://github.com/fulldecent/kibitz>
 
 ## License
 
