@@ -12,9 +12,9 @@ All contributors are welcome. Please use issues and pull requests to contribute 
 3. Tag the release in GitHub
    1. Create the release commit
    2. Create the release with notes from the change log
-3. Push the podspec to cocoapods
+4. Push the podspec to cocoapods
    1. `pod trunk push`
-4. Create Carthage binaries
+5. Create Carthage binaries
    1. `carthage build --no-skip-current`
    2. `carthage archive FDChessboardView`
    3. Add to the GitHub release

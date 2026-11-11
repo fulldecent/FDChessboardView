@@ -12,12 +12,12 @@ FDChessboardView
 Features
 --------
 
- * High resolution graphics
- * Customizable themes and game graphics
- * Supports all single board chess variants: suicide, losers, atomic, etc.
- * Supports games with odd piece arrangement and non-standard castling (Fisher 960)
- * Very clean API, this is just a view
- * Supports a minimum deployment target of iOS 13.0
+* High resolution graphics
+* Customizable themes and game graphics
+* Supports all single board chess variants: suicide, losers, atomic, etc.
+* Supports games with odd piece arrangement and non-standard castling (Fisher 960)
+* Very clean API, this is just a view
+* Supports a minimum deployment target of iOS 13.0
 
 ## Installation
 
@@ -36,7 +36,6 @@ github "fulldecent/FDChessboardView" ~> 3.0
 ```
 
 Then run `carthage update` to build the framework and drag the built FDChessboardView.framework into your Xcode project.
-
 
 Usage
 -----
@@ -141,19 +140,29 @@ Upcoming features
 
 These following items are in the API for discussion and awaiting implementation:
 
- * Display for last move
- * Mutable game state (i.e. can move the pieces)
- * Animation for piece moves
- * Highlighting of legal squares for a piece after begin dragging
- * Premove
-
+* Display for last move
+* Mutable game state (i.e. can move the pieces)
+* Animation for piece moves
+* Highlighting of legal squares for a piece after begin dragging
+* Premove
 
 See also
 -----------
 
-See also Kibitz for Mac which is making a comeback https://github.com/fulldecent/kibitz
-
+See also Kibitz for Mac which is making a comeback <https://github.com/fulldecent/kibitz>
 
 ## License
 
-FDChessboardView is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
+FDChessboardView is available under the MIT license. See [the LICENSE file](LICENSE.md) for more information.
+
+## Releases
+
+Use `fix:`, `feat:`, or `BREAKING CHANGE:` prefixes in commit messages. [Release Please](https://github.com/googleapis/release-please) opens a release pull request from those commits. Merging that pull request publishes a tag and a GitHub Release. The git tag is what Swift Package Manager installs.
+
+GitHub Actions needs permission to open pull requests.
+
+If you are adopting this from an existing project and the first Release Please pull request gets the version wrong, check the Release Please documentation. You may need a configuration option when tags have no v prefix, and for other situations.
+
+## References
+
+This repository is built on [swift-module-template](https://github.com/fulldecent/swift-module-template) v16.6.0 and [project-template](https://github.com/fulldecent/project-template) v1.4.1. The published build is an Apple-platform library, not the template's Linux static library.
